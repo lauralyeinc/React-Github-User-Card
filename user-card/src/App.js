@@ -2,7 +2,8 @@ import React from 'react';
 
 import './App.css';
 import Fetching from "./components/Fetching.js"; 
-// import EachUser from "../src/components/EachUser.js"; 
+import FollwersFetching from "./components/FollowersFetching.js";
+import Following from "./components/Follower.js"; 
 
 
 
@@ -11,11 +12,10 @@ function App (){
       <div className="App">
       <h1> GitHub User Card </h1>
       <Fetching />
-      {/* <EachUser /> */}
+      <FollwersFetching /> 
+      {/* <Following /> */}
       </div>
     );
-  
-  
 }
 
 

@@ -5,7 +5,7 @@ function EachUser(props) {
     return (
         <>
         <div className="User-Card">
-            <img src={props.User.avatar_url} alt={props.User.name} />
+            <img width="150" src={props.User.avatar_url} alt={props.User.name} />
             <div className="User-Info">
                 <h2> {props.User.name} </h2>   
                 <h4> Login: {props.User.login}</h4> 
