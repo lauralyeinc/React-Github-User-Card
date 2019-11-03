@@ -44,14 +44,18 @@ When you have those completed, you're ready to start coding!
 ## STEP 1 - Fetch the User Data
 
 - When your component mounts, send a GET request to the following URL (replacing the palceholder with your Github name):
-  - https://api.github.com/users/<your name>
+  - https://api.github.com/users/<your name> -Done 
 - After you fetch your data, set it to state  - Done 
 
 ## STEP 2 - Display the User Data
 
-- Pass the data to the component that will be displaying it
+- Pass the data to the component that will be displaying it   
+
+    Need to pass the data to another component for practice. 
+
+
 - Build out a user card using the data that the Github API returns to you
-  - You may reference your old project for this, or you may wish to build this from scratch yourself
+  - You may reference your old project for this, or you may wish to build this from scratch yourself  - Done 
 
 ## STEP 3 - Fetch the User's Followers
 

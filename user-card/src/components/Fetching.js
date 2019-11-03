@@ -1,8 +1,9 @@
 import React from "react"; 
+import EachUser from "./EachUser.js"; 
 
 class Fetching extends React.Component {
     state = {
-        User: { }     // or [] or "  "
+        User: { }     // or [] or "  "  
     };
 
     componentDidMount() {
@@ -11,7 +12,7 @@ class Fetching extends React.Component {
         .then(response =>{
             console.log("Fetching.js: componentDidMount fetch response", response);
             this.setState({
-                User: response     // .message could be anything the repsonse of the API is telling us
+                User: response   
             });
         })
         .catch(error => {
@@ -21,13 +22,10 @@ class Fetching extends React.Component {
 
     render(){
         return (
-            <div className="User-Card">
-            <img src={this.state.User.avatar_url} alt="profile" /> 
-            <h2> {this.state.User.name} </h2>   
-            <h4> Login: {this.state.User.login} </h4> 
-            <h4> Location: {this.state.User.location} </h4>  
-            <p> Bio: {this.state.User.bio} </p>   
-            </div> 
+            <div className="fetching-info">
+                {/* <p> testing </p> */}
+            <EachUser key={this.state.User.id} User={this.state.User} />
+            </div>
         )
     }
 }
