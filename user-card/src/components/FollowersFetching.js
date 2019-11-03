@@ -1,12 +1,13 @@
 import React from "react"; 
-import Follower from "./Follower.js"; 
 import EachUser from "./EachUser.js"; 
 
 class FollowersFetching extends React.Component {
-    state = {
-        User: {},
-        Followers: [ ]  
-    };
+    constructor(props) {
+        super(props);
+        this.state = {
+            User: []
+        }
+    }
 
     componentDidMount() {
         fetch("https://api.github.com/users/lauralyeinc/followers")
@@ -14,7 +15,7 @@ class FollowersFetching extends React.Component {
         .then(response =>{
             console.log("FollowersFetching.js: componentDidMount fetch response", response);
             this.setState({
-                Followers: response   
+                User: response   
             });
         })
         .catch(error => {
@@ -24,15 +25,10 @@ class FollowersFetching extends React.Component {
 
     render(){
         return (
-            <div className="following-area">
-                {/* <p> testing </p> */}
-                {this.state.Followers.map(Followers => 
-                this.setState({
-                    Followers: User 
-                })
-                )}
-                <Follower key={this.state.Followers.id} Followers={this.state.Followers} />
-                <EachUser key={this.state.User.id} User={this.state.User} />
+            <div className="followers-fetching-info">
+                {this.state.User.map(User => (
+                <EachUser key={this.state.User.id} User={User} />
+                ))}
             </div>
         )
     }

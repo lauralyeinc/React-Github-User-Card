@@ -12,7 +12,7 @@ class Fetching extends React.Component {
         .then(response =>{
             console.log("Fetching.js: componentDidMount fetch response", response);
             this.setState({
-                User: response   
+                User: response  
             });
         })
         .catch(error => {

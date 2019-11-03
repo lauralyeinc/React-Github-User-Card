@@ -2,15 +2,16 @@ import React from "react";
 
 function EachUser(props) {  
     console.log("EachUser.js: EachUser: Props", props)
+    let thisUser = props.User;
     return (
         <>
         <div className="User-Card">
-            <img width="150" src={props.User.avatar_url} alt={props.User.name} />
+            <img width="150" src={thisUser.avatar_url} alt={thisUser.name} />
             <div className="User-Info">
-                <h2> {props.User.name} </h2>   
-                <h4> Login: {props.User.login}</h4> 
-                <h4> Location: {props.User.location} </h4>  
-                <p> Bio: {props.User.bio} </p>  
+                <h2> {thisUser.name} </h2>   
+                <h4> Login: {thisUser.login}</h4> 
+                <h4> Location: {thisUser.location} </h4>  
+                <p> Bio: {thisUser.bio} </p>  
             </div> 
         </div>
         </>
