@@ -17,8 +17,8 @@ Commit your code regularly and meaningfully. This helps both you and your team l
 - [x ] Clone your OWN version of the repository in your terminal
 - [x ] Use CRA to create a new React app in this repository
 - [x ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [x ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [x ] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project.
 
@@ -45,7 +45,7 @@ When you have those completed, you're ready to start coding!
 
 - When your component mounts, send a GET request to the following URL (replacing the palceholder with your Github name):
   - https://api.github.com/users/<your name>
-- After you fetch your data, set it to state
+- After you fetch your data, set it to state  - Done 
 
 ## STEP 2 - Display the User Data
 
