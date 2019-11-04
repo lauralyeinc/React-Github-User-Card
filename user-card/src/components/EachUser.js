@@ -29,7 +29,7 @@ this.state.User    `${}`  Switched EachUser.js for Featching in App.js and it wo
 */
 
 const Div = styled.div`
-    width: 50%;
+    width: 35%;
     padding: 2rem;
     background: linear-gradient(45deg, #ff3399, #f98625);
     align-items: center;

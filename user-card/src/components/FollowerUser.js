@@ -23,7 +23,7 @@ export default FollowerUser;
 
 
 const Div = styled.div`
-    width: 20%;
+    width: 15%;
     justify-content: center;
     padding: 1.5rem;
     background: linear-gradient(30deg, #e52e71, #ff8a00);

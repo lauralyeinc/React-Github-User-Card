@@ -22,5 +22,6 @@ const AppDiv = styled.div`
 `
 
 const Title = styled.h1`
-  font-family: monospace;  
+  font-family: monospace; 
+  padding: .5rem;  
 `
