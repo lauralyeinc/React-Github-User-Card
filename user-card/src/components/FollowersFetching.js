@@ -1,5 +1,7 @@
 import React from "react"; 
-import EachUser from "./EachUser.js"; 
+import FollowerUser from "./FollowerUser.js"; 
+
+import styled from "styled-components"; 
 
 class FollowersFetching extends React.Component {
     constructor(props) {
@@ -25,13 +27,18 @@ class FollowersFetching extends React.Component {
 
     render(){
         return (
-            <div className="followers-fetching-info">
+            <Spacing className="followers-fetching-info">
                 {this.state.User.map(User => (
-                <EachUser key={this.state.User.id} User={User} />
+                <FollowerUser key={this.state.User.id} User={User} />
                 ))}
-            </div>
+            </Spacing>
         )
     }
 }
 
 export default FollowersFetching; 
+
+const Spacing = styled.div`
+    display: flex;
+    padding: 2.5rem; 
+`
