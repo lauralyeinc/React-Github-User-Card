@@ -26,7 +26,7 @@ const Div = styled.div`
     width: 20%;
     justify-content: center;
     padding: 1.5rem;
-    background: linear-gradient(30deg, purple, orange);
+    background: linear-gradient(30deg, #e52e71, #ff8a00);
     align-items: center;
     margin: auto;
     border-radius: 25% 10%;
