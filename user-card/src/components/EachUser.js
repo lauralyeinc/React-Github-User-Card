@@ -44,7 +44,7 @@ const Spacing = styled.div`
 const A = styled.a`
     text-decoration: none;
     color: white; 
-    font-family: helvetica;
+    font-family: Times;
     :hover{
         text-decoration: underline; 
     }
