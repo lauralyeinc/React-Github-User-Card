@@ -10,7 +10,8 @@ function EachUser(props) {
         <Div className="User-Card">
             <img width="300" src={thisUser.avatar_url} alt={thisUser.name} />
             <Spacing className="User-Info">
-                <h2> {thisUser.name} </h2>   
+                <h2> {thisUser.name} </h2> 
+                <img width="500" src="http://ghchart.rshah.org/lauralyeinc" alt="lauralyeinc's Github chart" />  
                 <h4> Login: {thisUser.login}</h4> 
                 <h4> Location: {thisUser.location} </h4>  
                 <A href={`${thisUser.html_url}`}> Github Profile </A> 
@@ -28,7 +29,7 @@ this.state.User    `${}`  Switched EachUser.js for Featching in App.js and it wo
 */
 
 const Div = styled.div`
-    width: 40%;
+    width: 50%;
     padding: 2rem;
     background: linear-gradient(45deg, #ff3399, #f98625);
     align-items: center;
@@ -37,7 +38,7 @@ const Div = styled.div`
     color: white; 
 `
 const Spacing = styled.div`
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
 `
 
