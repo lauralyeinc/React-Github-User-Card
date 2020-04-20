@@ -15,10 +15,10 @@ Commit your code regularly and meaningfully. This helps both you and your team l
 - [x ] Create a forked copy of this project.
 - [x ] Add your team lead as collaborator on Github.
 - [x ] Clone your OWN version of the repository in your terminal
-- [ ] Use CRA to create a new React app in this repository
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [x ] Use CRA to create a new React app in this repository
+- [x ] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [x ] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project.
 
@@ -44,20 +44,21 @@ When you have those completed, you're ready to start coding!
 ## STEP 1 - Fetch the User Data
 
 - When your component mounts, send a GET request to the following URL (replacing the palceholder with your Github name):
-  - https://api.github.com/users/<your name>
-- After you fetch your data, set it to state
+  - https://api.github.com/users/<your name> -Done 
+- After you fetch your data, set it to state  - Done 
 
 ## STEP 2 - Display the User Data
 
-- Pass the data to the component that will be displaying it
+- Pass the data to the component that will be displaying it   -Done 
 - Build out a user card using the data that the Github API returns to you
-  - You may reference your old project for this, or you may wish to build this from scratch yourself
+  - You may reference your old project for this, or you may wish to build this from scratch yourself  - Done 
 
 ## STEP 3 - Fetch the User's Followers
 
 - When your component mounts, you will also fetch the user's followers using this endpoint:
-  https://api.github.com/users/< Your github name >/followers
-- Set that data to state as well, and display the data in your app
+  https://api.github.com/users/< Your github name >/followers  - Done 
+- Set that data to state as well, and display the data in your app  
+    -Set to State.  Having Troulbe displaying.  STUCK.  I have the harcode for each "follower" showing, img, name, login, location, bio, but not each followers info.  
 
 ## STEP 4 - Style the User Card
 
